@@ -69,12 +69,6 @@
             margin: 5px;
             transition: background-color 0.3s ease;
         }
-        .-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; /* Center the buttons */
-            margin: 20px 0;project
-        }
         
         nav a:hover {
             background-color: #2980b9;
@@ -100,14 +94,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-        .gallery {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            overflow: hidden;
-            border-radius: 10px;
-        }
+       
+        
         .gallery img {
             width: 100%;
             display: none;
@@ -210,9 +198,8 @@
             <a href="#" onclick="showSection('Day 18')">Day  18</a>
             <a href="#" onclick="showSection('Day 19')">Day  19</a>
             <br>
-            <a href="#" onclick="showSection('gallery')">Gallery</a>
-             <br>
-            <a style="background-color: rgb(13, 0, 113);" href="#" onclick="showSection('projects')">Projects</a>
+            
+            
         </nav>
         <section id="certificate" class="section">
             <h1>Certificate</h1>
@@ -341,33 +328,6 @@
             </div>
         </section>
         
-
-        
-
-        <section id="projects" class="section">
-            <h1>Projects</h1>
-            <ul>
-                <li>
-                    <div class="project-details">
-                        <h2>AudioCrypt Project</h2>
-                        <p>
-                            This project is a secure audio steganography tool developed to demonstrate how encrypted messages can be hidden within audio files using cryptographic and steganographic techniques. It uses AES-256 encryption and LSB-based data hiding methods, all wrapped in a GUI application built with Python and Tkinter.
-                        </p>
-                        <b>Features</b>
-                        <ol>
-                            <li>Supports embedding secret messages into <code>.wav</code> audio files using Least Significant Bit (LSB) steganography.</li>
-                            <li>Encrypts messages before hiding them using AES-256 (CBC mode) for added security.</li>
-                            <li>Allows password protection for decrypting hidden messages securely.</li>
-                            <li>Provides buttons to select audio files, input messages, encrypt & embed, or extract & decrypt.</li>
-                        </ol>
-                    </div>
-                </li>
-            </ul>
-             <div class="project-buttons">
-                <a href="#" class="project-button" onclick="showSection('AC')">View AudioCrypt Steps</a>
-                <a href="https://github.com/Sameer643-satex/AudioCrypt-main" target="_blank" rel="noopener noreferrer" class="project-button">Go to GitHub Repo</a>
-            </div>
-        </section>
 
         <section id="AC" class="section">
             <h1>Steps to use AudioCrypt Tool</h1>
